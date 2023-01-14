@@ -25,14 +25,14 @@ jobs:
       - name: install-dependencies
         run: yarn --frozen-lockfile
 
-      # Run test
-      - name: test
-        run: yarn test
-
       - name: Create dot env file
         run: |
           touch .env
           echo "ALCHEMY_API_KEY=${{ secrets.ALCHEMY_API_KEY }}" >> .env
+
+      # Run test
+      - name: test
+        run: yarn test
 
       # Get current package version
       - name: current-package-version
