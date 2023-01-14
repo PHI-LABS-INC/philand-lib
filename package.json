@@ -1,6 +1,6 @@
 {
   "name": "philand-lib",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
@@ -26,7 +26,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=16"
+    "node": ">=14"
   },
   "keywords": [],
   "author": "zak3939",
