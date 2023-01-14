@@ -12,7 +12,7 @@ import { ObjectEnum } from './helpers/tokneIds';
 export const getAchievedQuest = async (address: string): Promise<any> => {
   const provider = new ethers.providers.AlchemyProvider(
     'matic',
-    process.env.ALCHEMY_APIKEY
+    process.env.ALCHEMY_API_KEY
   );
   const multicall = new ethers.Contract(
     MULTICALL_CONTRACT_ADDRESS,
