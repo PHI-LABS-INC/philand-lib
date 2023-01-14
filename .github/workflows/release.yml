@@ -29,6 +29,11 @@ jobs:
       - name: test
         run: yarn test
 
+      - name: Create dot env file
+        run: |
+          touch .env
+          echo "ALCHEMY_API_KEY=${{ secrets.ALCHEMY_API_KEY }}" >> .env
+
       # Get current package version
       - name: current-package-version
         run: node -p -e '`CURRENT_PACKAGE_VERSION=${require("./package.json").version}`' >> $GITHUB_ENV
