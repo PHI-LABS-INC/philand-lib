@@ -26,7 +26,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=16"
+    "node": ">=14"
   },
   "keywords": [],
   "author": "zak3939",
