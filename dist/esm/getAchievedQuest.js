@@ -5,7 +5,7 @@ import { MULTICALL_CONTRACT_ADDRESS, PHICLAIM_CONTRACT_ADDRESS, QUESTOBJECT_CONT
 import { retryableAsyncRequest } from './helpers/retryableApiCall';
 import { ObjectEnum } from './helpers/tokneIds';
 export const getAchievedQuest = async (address) => {
-    const provider = new ethers.providers.AlchemyProvider('matic', process.env.ALCHEMY_APIKEY);
+    const provider = new ethers.providers.AlchemyProvider('matic', process.env.ALCHEMY_API_KEY);
     const multicall = new ethers.Contract(MULTICALL_CONTRACT_ADDRESS, multicallAbi, provider);
     const phiClaimIface = new ethers.utils.Interface(phiClaimAbi);
     const userAddress = address.toLowerCase();

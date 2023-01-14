@@ -11,7 +11,7 @@ const contractAddress_1 = require("./helpers/contractAddress");
 const retryableApiCall_1 = require("./helpers/retryableApiCall");
 const tokneIds_1 = require("./helpers/tokneIds");
 const getAchievedQuest = async (address) => {
-    const provider = new ethers_1.ethers.providers.AlchemyProvider('matic', process.env.ALCHEMY_APIKEY);
+    const provider = new ethers_1.ethers.providers.AlchemyProvider('matic', process.env.ALCHEMY_API_KEY);
     const multicall = new ethers_1.ethers.Contract(contractAddress_1.MULTICALL_CONTRACT_ADDRESS, multicall_json_1.default, provider);
     const phiClaimIface = new ethers_1.ethers.utils.Interface(PhiClaim_json_1.default);
     const userAddress = address.toLowerCase();
