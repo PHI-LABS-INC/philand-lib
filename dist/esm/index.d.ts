@@ -1,2 +1,2 @@
-export declare const hello: () => void;
+export { getAchievedQuest } from './getAchievedQuest';
 //# sourceMappingURL=index.d.ts.map

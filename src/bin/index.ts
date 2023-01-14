@@ -1,4 +1,2 @@
-#!/usr/bin/env node
-
-import { hello } from '..';
-hello();
+import { getAchievedQuest } from '..';
+getAchievedQuest(process.argv[2]);

@@ -1,10 +1,12 @@
-import { hello } from '../src';
+import { getAchievedQuest } from '..';
 
-describe('hello() のテスト', () => {
-  it('Hello. と出力', () => {
-    const log = jest.spyOn(console, 'log').mockReturnValue();
-    hello();
-    expect(log).toHaveBeenNthCalledWith(1, 'Hello.');
-    log.mockRestore();
+describe('getAchievedQuest test', () => {
+  it('check getAchievedQuest', async () => {
+    // const log = jest.spyOn(console, 'log').mockReturnValue();
+    const result = await getAchievedQuest(
+      '0x5037e7747fAa78fc0ECF8DFC526DcD19f73076ce'
+    );
+    expect(result).not.toBeNull();
+    // log.mockRestore();
   });
 });
