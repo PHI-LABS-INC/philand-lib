@@ -2,9 +2,6 @@ interface NumberKeyObject {
   [key: string]: number;
 }
 export const ObjectEnum: NumberKeyObject = {
-  // campaign quest objects
-  // ...KakuseiCampaignObjectEnum,
-
   // quest objects
   PHIDemoPlayonStarkNet1: 100001,
   CreateTestnetPhiland1: 100002,
