@@ -2,8 +2,6 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ObjectEnum = void 0;
 exports.ObjectEnum = {
-    // campaign quest objects
-    // ...KakuseiCampaignObjectEnum,
     // quest objects
     PHIDemoPlayonStarkNet1: 100001,
     CreateTestnetPhiland1: 100002,

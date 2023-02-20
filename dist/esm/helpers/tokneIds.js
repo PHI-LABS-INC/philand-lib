@@ -1,6 +1,4 @@
 export const ObjectEnum = {
-    // campaign quest objects
-    // ...KakuseiCampaignObjectEnum,
     // quest objects
     PHIDemoPlayonStarkNet1: 100001,
     CreateTestnetPhiland1: 100002,
