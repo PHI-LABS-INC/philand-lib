@@ -1,4 +1,3 @@
-// import { apolloClient } from './apollo-client';
 import { gql } from '@apollo/client';
 import { apolloClient } from '../src/helpers/apolloClient';
 import { setAuthenticationToken } from '../src/helpers/state';
