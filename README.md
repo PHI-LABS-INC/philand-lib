@@ -20,7 +20,7 @@ npm install philand-lib
 
 ## get access token
 
-npx ts-node ./example/get_jwt.ts
+npx ts-node ./example/jwt/get_jwt.ts
 
 ## getAchievedQuest
 
