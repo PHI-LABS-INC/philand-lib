@@ -68,7 +68,7 @@ const getActiveScore = async (address) => {
     resultClaimed2.returnData.forEach((r2, i) => {
         if (phiObjectIface.decodeFunctionResult('getExp', r2)[0].toNumber() != 0) {
             details.push({
-                tokenId: datas[i],
+                tokenId: Number(datas[i]),
                 exp: phiObjectIface.decodeFunctionResult('getExp', r2)[0].toNumber(),
             });
             expGain =
