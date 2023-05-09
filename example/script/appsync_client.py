@@ -22,7 +22,7 @@ url="https://graph-api.phi.blue/graphql"
 #
 headers = {'Authorization': '{}'.format(access_token)}
 #
-query='{ \"query\": \"query {listQuests { items { Condition Value }}}\" }'
+query='{ \"query\": \"query {listQuests { data { Condition Value }}}\" }'
 response = requests.post(url, headers=headers, data=query)
 #
 print(response.text)

@@ -2,6 +2,8 @@ import {
   KakuseiCampaignObjectEnum,
   YasaiCampaignObjectEnum,
   TiliXCampaignObjectEnum,
+  GoodPhilandCampaignObjectEnum,
+  PooltogetherCampaignObjectEnum,
 } from './campaignIds';
 
 interface NumberKeyObject {
@@ -12,6 +14,8 @@ export const ObjectEnum: NumberKeyObject = {
   ...KakuseiCampaignObjectEnum,
   ...YasaiCampaignObjectEnum,
   ...TiliXCampaignObjectEnum,
+  ...GoodPhilandCampaignObjectEnum,
+  ...PooltogetherCampaignObjectEnum,
   // quest objects
   PHIDemoPlayonStarkNet1: 100001,
   CreateTestnetPhiland1: 100002,
@@ -119,6 +123,7 @@ export const ObjectEnum: NumberKeyObject = {
   VoteOnSnapshot5: 100803,
   VoteOnSnapshot10: 100804,
   VoteOnSnapshot30: 100805,
+  VoteOnSnapshot100: 100806,
   SmoothieVoter1: 100901,
   AaveDepositor1: 101001,
   AaveDepositor5: 101002,
@@ -188,6 +193,10 @@ export const ObjectEnum: NumberKeyObject = {
   BalancerTrader5: 103702,
   BalancerLiquidityProvider1: 103703,
   BalancerGaugeVoter1: 103704,
+  BanklessHolding35000: 103801,
+  BanklessSnapshot5: 103802,
+  BanklessPodcast1: 103803,
+  BanklessPOAP1: 103804,
   BAYCOwner1: 103901,
   BAYCOwner2: 103902,
   BAYCOwner3: 103903,
@@ -196,5 +205,9 @@ export const ObjectEnum: NumberKeyObject = {
   DoodlesOwner1: 104201,
   AzukiOwner1: 104601,
   BeanzOwner1: 104602,
+  DegenMinted1: 104701,
+  DegenScore1000: 104702,
+  DegenScore1300: 104703,
   LensPhilandOwner1: 104801,
+  ZerionNFTOwner1: 104901,
 };

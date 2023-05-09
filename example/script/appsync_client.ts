@@ -17,7 +17,7 @@ const access_token = dict_aa['AuthenticationResult']['IdToken'];
 
 const url = 'https://graph-api.phi.blue/graphql';
 
-const query = 'query {listQuests { items { Condition Value }}}';
+const query = 'query {listQuests { data { Condition Value }}}';
 const data = JSON.stringify({ query: query });
 
 const headers = {

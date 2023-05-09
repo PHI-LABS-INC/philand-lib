@@ -4,6 +4,12 @@ interface NumberKeyObject {
   [key: string]: number;
 }
 
+export const TestCampaignObjectEnum: NumberKeyObject = {
+  ExpGainSinceApply10000: 199901,
+  LinkToOthers5: 199902,
+  LinkReceived10: 199903,
+};
+
 export const KakuseiCampaignObjectEnum: NumberKeyObject = {
   ExpGainSinceApply10000: 100031,
   LinkToOthers5: 100032,
@@ -48,4 +54,23 @@ export const GoodPhilandCampaignObjectEnum: NumberKeyObject = {
   TopSingleLandPixelArt1: 110103,
   TopMultipleLandDesign1: 110104,
   TopMultipleLandPixelArt1: 110105,
+};
+
+export const Phi1UPGameObjectEnum: NumberKeyObject = {
+  ParticipantPhi1UPGame1: 110201,
+  ParticipantPhi1UPGame2: 110202,
+  BestOnChainGameIdeas1: 110203,
+  BestOffChainGameIdeas1: 110204,
+};
+
+export const PooltogetherCampaignObjectEnum: NumberKeyObject = {
+  ParticipantPooltogetherTiliX1: 105201,
+  DepositPoolTogether20: 105202,
+  DepositPoolTogether100: 105203,
+  DepositPoolTogether1000: 105204,
+  PrizePoolTogether1: 105205,
+  DelegatoorPooltogether1: 105206,
+  PoolHolding10: 105207,
+  PoolyNFTOwner1: 105208,
+  PooltogetherPhilandOwner1: 105209,
 };
